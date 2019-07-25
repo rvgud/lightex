@@ -1,7 +1,7 @@
 FROM continuumio/miniconda3:latest
 
 RUN pip install --upgrade pip mlflow
-
+USER sampleuser
 EXPOSE 5000
 
 RUN mkdir -p /mlflow/db
